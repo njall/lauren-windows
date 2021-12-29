@@ -40,9 +40,18 @@ window.addEventListener('DOMContentLoaded', event => {
 
     setTimeout(function () {
         const masthead = document.body.querySelector('.masthead');
-        masthead.style.background = 'black';
+        const mastheadText = document.body.querySelector('.masthead-text');
+
         masthead.style.background = 'linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("assets/img/bg-masthead.jpg")';
-    }, 5000);
+        masthead.style.backgroundPosition = 'center';
+        masthead.style.backgroundRepeat = 'no-repeat';
+        masthead.style.backgroundAttachment = 'scroll';
+        masthead.style.backgroundSize = 'cover';
+
+        mastheadText.style.visibility = 'visible'
+        mastheadText.style.opacity = 1;
+        mastheadText.style.transition = 'opacity 1s linear';
+    }, 3600);
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
