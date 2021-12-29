@@ -4165,8 +4165,8 @@ textarea.form-control-lg {
 .navbar-brand {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -11600,7 +11600,7 @@ body {
     padding: 0;
   }
   .masthead h1, .masthead .h1 {
-    font-size: 6.5rem;
+    font-size: 1.5rem;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
   }
