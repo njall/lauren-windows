@@ -5,7 +5,7 @@
 */
 //
 // Scripts
-// 
+//
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     };
 
-    // Shrink the navbar 
+    // Shrink the navbar
     navbarShrink();
 
     // Shrink the navbar when page is scrolled
@@ -37,6 +37,12 @@ window.addEventListener('DOMContentLoaded', event => {
             offset: 74,
         });
     };
+
+    setTimeout(function () {
+        const masthead = document.body.querySelector('.masthead');
+        masthead.style.background = 'black';
+        masthead.style.background = 'linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("assets/img/bg-masthead.jpg")';
+    }, 5000);
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
