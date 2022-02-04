@@ -11557,16 +11557,15 @@ body {
 }
 
 .masthead {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: url("../assets/img/bg-masthead.gif");
+  height: 100vh;
+  /*position: relative;
+  height: 100%;
+  padding: 15rem 0;*/
+  background: url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: contain;
 }
 
 .masthead .masthead-text {
